@@ -1,0 +1,14 @@
+A sentiment analysis library in Python.
+
+PreProcess data:
+- Create two directories : pos and neg
+- Put each review in a separate *txt file and as per the sentiment put in the respective pos / neg dir.
+
+Load Data:
+- from sentiment import Data
+- X_train, X_test = Data.readData(path_to_parent_of_pos_neg, train_test_split_percent)
+
+Naive Bayes:
+- from sentiment import NaiveBayes
+- classifier = NaiveBayes.train(X_train) 
+- accuracy = NaiveBayes.test(classifier, X_test)
