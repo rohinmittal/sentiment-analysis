@@ -1,3 +1,4 @@
+from nltk import classify
 from nltk.classify import NaiveBayesClassifier
 
 class NaiveBayes:
@@ -11,4 +12,4 @@ class NaiveBayes:
 
 	def test(classifier, test_set):
         	print('Testing classifier...')
-        	return nltk.classify.accuracy(classifier, test_set)
+        	return classify.accuracy(classifier, test_set)
