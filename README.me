@@ -1,12 +1,16 @@
-A sentiment analysis library in Python.
+A simple and easy to use sentiment-analysis library in Python.
 
-PreProcess data:
+The library will provide modules as simple as follows:
+- Preprocess and load data in the required format without worrying anything about the text processing details.
+- Easy to call train / test modules
+
+Required Data Format:
 - Create two directories : pos and neg
 - Put each review in a separate *txt file and as per the sentiment put in the respective pos / neg dir.
 
 Load Data:
 - from sentiment import Data
-- X_train, X_test = Data.readData(path_to_parent_of_pos_neg, train_test_split_percent)
+- X_train, X_test = Data.loadData(path_to_parent_of_pos_neg, train_test_split_percent)
 
 Naive Bayes:
 - from sentiment import NaiveBayes
